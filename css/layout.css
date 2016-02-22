@@ -1,0 +1,327 @@
+/* ==========================================================================
+   HTML RESET
+   ========================================================================== */
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+*:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+::selection { background:#2980b9; color:#FFF; }
+::-moz-selection { background:#2980b9; color:#FFF; }
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* ==========================================================================
+   FONT ICONS
+   ========================================================================== */
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?bezl3x');
+    src:    url('../fonts/icomoon.eot?bezl3x#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?bezl3x') format('truetype'),
+        url('../fonts/icomoon.woff?bezl3x') format('woff'),
+        url('../fonts/icomoon.svg?bezl3x#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+    content: "\e904";
+}
+.icon-twitter:before {
+    content: "\e900";
+}
+.icon-google:before {
+    content: "\e901";
+}
+.icon-youtube:before {
+    content: "\e902";
+}
+.icon-mail:before {
+    content: "\e903";
+}
+.icon-search:before {
+    content: "\e905";
+}
+.icon-plus:before {
+    content: "\e906";
+}
+.icon-star:before {
+    content: "\e907";
+}
+.icon-top:before {
+    content: "\e908";
+}
+.icon-help:before {
+    content: "\e909";
+}
+@font-face {
+    font-family: 'museo500';
+    src: url('../fonts/museo500-regular-webfont.eot');
+    src: url('../fonts/museo500-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo500-regular-webfont.woff2') format('woff2'),
+         url('../fonts/museo500-regular-webfont.woff') format('woff'),
+         url('../fonts/museo500-regular-webfont.ttf') format('truetype'),
+         url('../fonts/museo500-regular-webfont.svg#museo500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* ==========================================================================
+   HTML TAGS STYLE
+   ========================================================================== */
+body{
+  color: #222222;
+  font:400 14px/22px 'Source Sans Pro', sans-serif;
+  background: url(../images/img-1.png) no-repeat;
+  background-attachment: fixed;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	color:#0c6c89;
+	text-transform: uppercase;
+	text-align: center;
+}
+h2{
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+h2 span{
+	font-size: 30px;
+	color:#0c6c89;
+	border:2px solid #0c6c89;
+	display: inline-block;
+	letter-spacing: 2px;
+	line-height: 1;
+	padding:10px 15px 11px;
+}
+h3{
+	font:18px museo500, sans-serif;
+	color:#323436;
+	text-transform: none;
+	text-align: left;
+}
+p,a{
+	color: #222222;
+  	font:400 14px/22px 'Source Sans Pro', sans-serif;
+  	text-decoration: none;
+}
+a{
+	border-bottom: 1px dotted transparent;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+a:hover{
+	color: #2980b9;
+}
+figure{
+	margin:0;
+}
+ul{
+	list-style: none;
+}
+img{
+	max-width: 100%;
+	vertical-align: top;
+}
+/* ==========================================================================
+   WRAPPER SETTING
+   ========================================================================== */
+.main-wrapper{
+	width: 100%;
+	margin:0 auto;
+	background: #FFF;
+}
+.container{
+	position: relative;
+	margin: 0 auto;
+	padding:0 15px;
+}
+@media (min-width: 768px){
+
+}
+@media (min-width: 992px){
+	.main-wrapper{
+		width: 960px;
+		margin: 40px auto;
+	}
+	.container{
+		width: 900px;
+		padding:0;
+	}
+}
+@media (min-width: 1260px){
+	.main-wrapper{
+		width: 1240px
+	}
+	.container{
+		width: 1140px;
+	}
+}
+
+/* ==========================================================================
+   COLSET-1
+   ========================================================================== */
+.colset-1 {
+  width: 100%;
+}
+.colset-1 .col-1 {
+  width: 100%;
+}
+/* ==========================================================================
+   COLSET-2
+   ========================================================================== */
+.colset-2 {
+  width: 100%;
+}
+.colset-2 .col-1,
+.colset-2 .col-2 {
+  width: 100%;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .colset-2 {
+    width: 100%;
+  }
+  .colset-2 .col-1,
+  .colset-2 .col-2 {
+    width: 49%;
+    margin-bottom: 0;
+  }
+  .colset-2 .col-1 {
+    float: left;
+  }
+  .colset-2 .col-2 {
+    float: right;
+  }
+}
+/* ==========================================================================
+   COLSET-3
+   ========================================================================== */
+.colset-3 {
+  width: 100%;
+}
+.colset-3 .col-1,
+.colset-3 .col-2,
+.colset-3 .col-3 {
+  width: 100%;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .colset-3 {
+    width: 100%;
+  }
+  .colset-3 .col-1,
+  .colset-3 .col-2,
+  .colset-3 .col-3 {
+    width: 31.33333333%;
+    margin-bottom: 0;
+  }
+  .colset-3 .col-1,
+  .colset-3 .col-2 {
+    float: left;
+  }
+  .colset-3 .col-2 {
+    margin: 0 3%;
+  }
+  .colset-3 .col-3 {
+    float: right;
+  }
+}
+/* ==========================================================================
+   COLSET-4
+   ========================================================================== */
+.colset-4 {
+  width: 100%;
+}
+.colset-4 .col-1,
+.colset-4 .col-2,
+.colset-4 .col-3,
+.colset-4 .col-4 {
+  width: 100%;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .colset-4 {
+    width: 100%;
+  }
+  .colset-4 .col-1,
+  .colset-4 .col-2,
+  .colset-4 .col-3,
+  .colset-4 .col-4 {
+    width: 23.55%;
+    margin-bottom: 0;
+  }
+  .colset-4 .col-1,
+  .colset-4 .col-2,
+  .colset-4 .col-3 {
+    float: left;
+  }
+  .colset-4 .col-2 {
+    margin: 0 1.9%;
+  }
+  .colset-4 .col-3 {
+    margin-right: 1.9%;
+  }
+  .colset-4 .col-4 {
+    float: right;
+  }
+}
+/* ==========================================================================
+   FORM
+   ========================================================================== */
+input[type="text"],input[type="email"],input[type="number"],input[type="password"]{
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #fff;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.07);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.07);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.07);
+	border: solid 1px #ccc;
+	padding:10px;
+	width: 100%;
+}
+label{
+	display: block;
+	margin-bottom: 5px;
+	text-align: left;
+}
+.global-form li{
+	margin-bottom: 10px;
+}
+@media (min-width: 992px){
+	.global-form{
+		float: left;
+		width: 480px;
+	}
+}
